@@ -23,3 +23,12 @@ Demonstrate automated failover to a secondary region
 Apply disaster recovery and high-availability concepts in AWS
 Document the architecture and implementation process for a technical portfolio
 
+Architecture
+The project uses two independent VPCs: 
+Environment        AWS Region         VPC CIDR          Role 
+Carrier 1          us-east-1        10.1.1.0/24         Primary 
+Carrier 2          us-west-2        10.1.2.0/24         Warm Standby 
+
+Each VPC contains a public subnet and a private subnet 
+
+
