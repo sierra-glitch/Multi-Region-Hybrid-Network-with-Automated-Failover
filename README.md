@@ -10,8 +10,6 @@ Secondary Region: US West (Oregon) - us-west-2
 The primary environment handles normal workload traffic while the secondary environment remains available as a warm standby. Route 53 health checks are used to detect primary workload failure and support automated DNS Failover to the secondary environment.
 
 PROJECT OBJECTIVES: 
-The objectives of this project are to: 
-
 Design a multi-region AWS network from the ground up 
 Implement isolated VPC environments in two AWS regions
 Apply subnetting and routing fundamentals
