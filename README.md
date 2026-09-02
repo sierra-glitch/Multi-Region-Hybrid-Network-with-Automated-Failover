@@ -52,14 +52,14 @@ Each VPC contains one public subnet and one private subnet. The public subnets a
 The public and private subnet design provides separation between internet facing and internal workloads. 
 
 ##Public subnet responsibilites: 
--Hosts internet facing EC2 workloads 
--Uses a route table with a default route to an Internet Gateway 
--Supports the publicly accessible application endpoint 
+##Hosts internet facing EC2 workloads 
+##Uses a route table with a default route to an Internet Gateway 
+##Supports the publicly accessible application endpoint 
 
 ##Private subnet responsibilites: 
--Provides an isolated network segment for internal resources
--Does not provide direct inbound internet access
--Can be used for future application, database, or management workloads
+##Provides an isolated network segment for internal resources
+##Does not provide direct inbound internet access
+##Can be used for future application, database, or management workloads
 
 ##AWS Services Used 
 This project uses the following AWS services to build the framework of the multi-region network architecture. 
