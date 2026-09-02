@@ -61,6 +61,17 @@ The public and private subnet design provides separation between internet facing
 -Does not provide direct inbound internet access
 -Can be used for future application, database, or management workloads
 
+##AWS Services Used 
+This project uses the following AWS services to build the framework of the multi-region network architecture. 
+|AWS Service | Purpose |
+|---|---|
+|Amazon VPC | Provides isolated virtual networks for the primary and secondary carriers |
+|Amazon EC2 | Hosts the Linux-based workloads used to represent application endpoints in each region |
+|Amazon Route 53 | Provides DNS management, health checks, and automated failover between the primary and secondary carriers |
+|Internet Gateway | Provides internet connectivity for resources deployed in the public subnets |
+|Route Tables | Control traffic routing within each VPC and provide the appropriate path to the Internet Gateway |
+|Security Groups | Provide stateful, instance-level network access controls based on the principle of least privilege |
+|Amazon CloudWatch | Provides monitoring and visibility into AWS resources and workload health |
 
 
 
