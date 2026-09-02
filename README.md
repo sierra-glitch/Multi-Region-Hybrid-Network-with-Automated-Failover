@@ -51,12 +51,12 @@ Each VPC contains one public subnet and one private subnet. The public subnets a
 ##Network Segmentation 
 The public and private subnet design provides separation between internet facing and internal workloads. 
 
-##Public subnet responsibilites: 
+##Public subnet responsibilites 
 ##Hosts internet facing EC2 workloads 
 ##Uses a route table with a default route to an Internet Gateway 
 ##Supports the publicly accessible application endpoint 
 
-##Private subnet responsibilites: 
+##Private subnet responsibilites 
 ##Provides an isolated network segment for internal resources
 ##Does not provide direct inbound internet access
 ##Can be used for future application, database, or management workloads
