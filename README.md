@@ -9,19 +9,19 @@ The architecture consists of two AWS Regions representing a primary and disaster
 
 The primary environment handles normal workload traffic while the secondary environment remains available as a warm standby. Route 53 health checks are used to detect primary workload failure and support automated DNS Failover to the secondary environment.
 
-##Project Objectives 
-Design a multi-region AWS network from the ground up 
-Implement isolated VPC environments in two AWS regions
-Apply subnetting and routing fundamentals
-Deploy Linux-based EC2 workloads
-Configure security groups using the principle of least privilege
-Implement DNS-based traffic management with Amazon Route 53
-Configure health monitoring for the primary workload
-Demonstrate automated failover to a secondary region 
-Apply disaster recovery and high-availability concepts in AWS
-Document the architecture and implementation process for a technical portfolio
+## Project Objectives 
+- Design a multi-region AWS network from the ground up 
+- Implement isolated VPC environments in two AWS regions
+- Apply subnetting and routing fundamentals
+- Deploy Linux-based EC2 workloads
+- Configure security groups using the principle of least privilege
+- Implement DNS-based traffic management with Amazon Route 53
+- Configure health monitoring for the primary workload
+- Demonstrate automated failover to a secondary region 
+- Apply disaster recovery and high-availability concepts in AWS
+- Document the architecture and implementation process for a technical portfolio
 
-##Architecture 
+## Architecture 
 The project uses a multi-region, active/passive architecture designed to provide workload availability and automated disaster recovery. Two independent VPC environments are deployed across separate AWS Regions, with one environment serving as the primary workload location and the second operating as a warm standby. Each VPC uses a /16 CIDR block, with /24 subnet allocations for public and private workloads. The address spaces are non-overlapping to provide clear network segmentation and simplified routing. 
 
 |Environment | AWS Region | VPC CIDR | Role | 
@@ -35,10 +35,10 @@ Under normal operating conditions, application traffic is directed to the primar
 
 Each regional VPC is segmented into public and private subnets to separate internet-facing workloads from internal resources. The environments use non-overlapping CIDR ranges to provide clear network boundaries and support future expansion. The architecture is designed to demonstrate core cloud networking and disaster recovery concepts, including VPC isolation, subnetting, routing, security controls, DNS-based failover, health monitoring, and high availability. 
 
-##Network Architecture 
+## Network Architecture 
 Within the network, there are two independent AWS VPC environments across separate AWS Regions. The primary environment operates in US East (N.Virginia) while the secondary environment operates in US West (Oregon) as warm standby for disaster recovery and automated failover. 
 
-#Subnet Design 
+# Subnet Design 
 Each VPC contains one public subnet and one private subnet. The public subnets are designed to support internet workloads, while the private subnets provide an isolated network segment for resources that do not require direct internet exposure. 
 
 |Environment |  Subnet | CIDR | Type |
@@ -51,17 +51,17 @@ Each VPC contains one public subnet and one private subnet. The public subnets a
 ##Network Segmentation 
 The public and private subnet design provides separation between internet facing and internal workloads. 
 
-##Public subnet responsibilites 
-##Hosts internet facing EC2 workloads 
-##Uses a route table with a default route to an Internet Gateway 
-##Supports the publicly accessible application endpoint 
+## Public subnet responsibilites 
+- Hosts internet facing EC2 workloads
+- Uses a route table with a default route to an Internet Gateway 
+- Supports the publicly accessible application endpoint 
 
-##Private subnet responsibilites 
-##Provides an isolated network segment for internal resources
-##Does not provide direct inbound internet access
-##Can be used for future application, database, or management workloads
+## Private subnet responsibilites 
+- Provides an isolated network segment for internal resources
+- Does not provide direct inbound internet access
+- Can be used for future application, database, or management workloads
 
-##AWS Services Used 
+## AWS Services Used 
 This project uses the following AWS services to build the framework of the multi-region network architecture. 
 |AWS Service | Purpose |
 |---|---|
