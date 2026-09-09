@@ -48,5 +48,6 @@ The database architecture will demonstrate:
 - Database subnet group
 - Database security group
 - Application to date connectivity
-- Monitoring and failover validation 
+- Monitoring and failover validation
+  
 - 
