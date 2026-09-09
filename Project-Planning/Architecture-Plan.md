@@ -31,7 +31,7 @@ The purpose of this project is to design and implement a multi-region AWS archit
 - Private Subnet: 10.1.2.0/24
 
 ## Failover Strategy 
-Amazon Route 53 health checks monitor the primary workload. If the primary endpoint becomes unavailable, DNS failover directs traffic toward the secondary region. 
+Amazon Route 53 health continuously monitor the availability and performance of servers and applications. If the primary web server of carrier 1 stops operating, it is redirected to the secondary back up (secondary carrier).  
 
 ## Planned High Availability Expansion 
 The project will be expanded to include an Amazon RDS database using a Multi-AZ deployment. 
