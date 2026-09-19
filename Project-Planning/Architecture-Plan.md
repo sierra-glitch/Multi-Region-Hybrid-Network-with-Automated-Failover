@@ -34,20 +34,23 @@ The purpose of this project is to design and implement a multi-region AWS archit
 Amazon Route 53 health continuously monitor the availability and performance of servers and applications. If the primary web server of carrier 1 stops operating, it is redirected to the secondary back up (secondary carrier).  
 
 ## Planned High Availability Expansion 
-The project will be expanded to include an Amazon RDS database using a Multi-AZ deployment. 
+The project will be expanded to include an Amazon RDS database for high availability
+
+## Amazon RDS MySQL database
+- VPC:carrier-db-subnet-group
+- Availability Zones: us-east-1a and us-east-1b
+- subnets: private subnets is used
+- security group: MySQL/Aurora (Port 3306) 
 
 The database architecture will demonstrate: 
-- Primary DB instance
-- Standby DB instance
-- Separate Availability Zones
+- strong isolation topology
+- database security using port 3306
+- Single Availability Zones
 - Automatic database failover
 - High availability within the primary AWS Region
 
-## Future Enhancements 
-- Amazon RDS Multi-AZ
-- Database subnet group
-- Database security group
-- Application to date connectivity
-- Monitoring and failover validation
+## Modern Serverless & Event-Driven Architecture 
+Amazon Lambda is a serverless, event-driven compute service that allows for applications to be ran by code without provisioning, configuring, or managing physical or virtual servers. Amazon Lambda executes code only when triggered by a specific event and automatically handles the underlying infrastructure, scaling, and security patching. 
+
   
 - 
