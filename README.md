@@ -75,4 +75,8 @@ This project uses the following AWS services to build the framework of the multi
 |Amazon Lambda | Serverless, event driven compute service using application code. Provisions, scales, and monitors while building | 
 |Amazon SNS | Fully managed, push-based publish-subcribe messaging service that coordinates the delivery of messages to subscribing endpoints or clients | 
 
+## Empirical Verification (Screenshots) 
+<img width="1338" height="648" alt="Screenshot 2026-09-19 at 11 50 18 AM" src="https://github.com/user-attachments/assets/0b37bdc3-c31e-4b17-9a19-9dc04852fa39" />
+
+
 
