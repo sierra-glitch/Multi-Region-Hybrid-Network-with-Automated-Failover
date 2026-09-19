@@ -72,6 +72,6 @@ This project uses the following AWS services to build the framework of the multi
 |Route Tables | Control traffic routing within each VPC and provide the appropriate path to the Internet Gateway |
 |Security Groups | Provide stateful, instance-level network access controls based on the principle of least privilege |
 |Amazon CloudWatch | Provides monitoring and visibility into AWS resources and workload health |
-
+|Amazon Lambda | Serverless, event driven compute service using application code. Provisions, scales, and monitors while building | 
 
 
