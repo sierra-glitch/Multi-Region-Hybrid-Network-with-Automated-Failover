@@ -73,5 +73,6 @@ This project uses the following AWS services to build the framework of the multi
 |Security Groups | Provide stateful, instance-level network access controls based on the principle of least privilege |
 |Amazon CloudWatch | Provides monitoring and visibility into AWS resources and workload health |
 |Amazon Lambda | Serverless, event driven compute service using application code. Provisions, scales, and monitors while building | 
+|Amazon SNS | Fully managed, push-based publish-subcribe messaging service that coordinates the delivery of messages to subscribing endpoints or clients | 
 
 
