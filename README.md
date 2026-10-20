@@ -38,7 +38,6 @@ Each regional VPC is segmented into public and private subnets to separate inter
 ## Network Architecture 
 Within the network, there are two independent AWS VPC environments across separate AWS Regions. The primary environment operates in US East (N.Virginia) while the secondary environment operates in US West (Oregon) as warm standby for disaster recovery and automated failover. 
 
-<img width="900" alt="AWS architecture" src="docs/aws_multi_region_failover_architecture.png" />
 
 # Subnet Design 
 Each VPC contains one public subnet and one private subnet. The public subnets are designed to support internet workloads, while the private subnets provide an isolated network segment for resources that do not require direct internet exposure. 
